@@ -115,6 +115,7 @@
                 url: miApi,
                 success:function(respuesta){
                     $(respuesta.products).each(function(i, e){
+                        console.log(i);
                         ul.append(`<li>${e.title}<li>`)
                     });
                     $("body").append(ul);
